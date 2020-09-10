@@ -299,7 +299,6 @@ body {
   background-color: #ffffff;
   color: var(--prymary-text-color);
   font-family: "Conv_Roboto-Regular";
-  font-size: 400;
   letter-spacing: 0.03em;
 }
 
@@ -566,9 +565,6 @@ li {
 }
 
 .hero {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -578,21 +574,23 @@ li {
           align-items: center;
   background: #c4c4c4;
   letter-spacing: 0.06em;
-  margin: 0 auto;
-  max-width: 1600px;
-  height: 600px;
-  background-image: url(../images/hero.JPG);
+  margin-right: auto;
+  margin-left: auto;
+  min-width: 480px;
+  height: 400px;
+  background-image: url(/images/Header-img.JPG);
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
 .hero-title {
   color: #ffffff;
+  padding: 60px;
   margin-top: 0;
   margin-bottom: 20px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 24px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
