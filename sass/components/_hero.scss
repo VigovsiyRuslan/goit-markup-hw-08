@@ -1,28 +1,26 @@
 .hero {
+  display: flex;
   justify-content: center;
   text-align: center;
   align-items: center;
   background: #c4c4c4;
   letter-spacing: 0.06em;
-  margin-right: auto;
-  margin-left: auto;
-  min-width: 480px;
-  height: 400px;
+  margin: 0 auto;
+  max-width: 1600px;
+  height: 600px;
 
-  background-image: url(../images/header-img.JPG);
+  background-image: url(../images/hero.JPG);
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
 .hero-title {
   color: $complementary-color;
-  padding: 60px;
-
   margin-top: 0;
   margin-bottom: 20px;
   font-weight: 900;
-  font-size: 24px;
-  line-height: 1.62;
+  font-size: 44px;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;

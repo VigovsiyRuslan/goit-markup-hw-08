@@ -1,7 +1,7 @@
 body {
   margin: 0;
   background-color: #ffffff;
-  color: var(--prymary-text-color);
+  color: $prymary-text-color;
   font-family: "Conv_Roboto-Regular";
 
   letter-spacing: 0.03em;
@@ -26,17 +26,22 @@ li {
 }
 
 .big-space {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .container {
+  width: 100%;
   max-width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .section-title {
   color: $prymary-text-color;

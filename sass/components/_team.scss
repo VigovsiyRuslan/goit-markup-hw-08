@@ -2,22 +2,41 @@
   background: #f5f4fa;
 }
 
-.employee {
-  background: #ffffff;
-  border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-}
+.team-members {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  & .employee {
+    width: 100%;
+    background: #ffffff;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
 
-.profession {
-  color: $paragraf-text-color;
-  font-size: 16px;
-  line-height: 1.18;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    @media screen and (min-width: 768px) {
+      width: 48%;
+      &:last-child {
+        margin-bottom: 30px;
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 23%;
+    }
+  }
+  & .team-img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .content-list {
-  margin: 0;
-  padding: 0;
   text-align: center;
 }
 
@@ -25,16 +44,9 @@
   margin-bottom: 16px;
   margin-top: 10px;
   text-align: center;
-}
-
-.team-members {
-  display: flex;
-  margin: 0;
-  padding: 0;
-
-  .employee:not(:last-child) {
-    margin-right: 30px;
-  }
+  color: $paragraf-text-color;
+  font-size: 16px;
+  line-height: 1.18;
 }
 
 .team-member-name {
