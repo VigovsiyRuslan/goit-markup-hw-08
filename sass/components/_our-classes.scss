@@ -15,6 +15,12 @@
   position: absolute;
   bottom: 0;
 }
+.section-work {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
 
 .thumb {
   position: relative;
