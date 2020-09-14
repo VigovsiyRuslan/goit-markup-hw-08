@@ -9,16 +9,16 @@
   max-width: 1600px;
   height: 600px;
 
-  background-image: url(../images/hero-mobile.JPG);
+  background-image: url(./images/hero-mobile.JPG);
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
 
   @media screen and (min-width: 768px) {
-    background-image: url(../images/hero-table.JPG);
+    background-image: url(./images/hero-table.JPG);
   }
   @media screen and (min-width: 1200px) {
-    background-image: url(../images/hero.JPG);
+    background-image: url(./images/hero.JPG);
   }
 }
 
