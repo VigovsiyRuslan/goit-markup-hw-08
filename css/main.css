@@ -595,7 +595,7 @@ li {
   margin: 0 auto;
   max-width: 1600px;
   height: 600px;
-  background-image: url(.../images/hero-mobile.JPG);
+  background-image: url(../images/hero-mobile.JPG);
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -603,13 +603,13 @@ li {
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url(.../images/hero-table.JPG);
+    background-image: url(../images/hero-table.JPG);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: url(.../images/hero.JPG);
+    background-image: url(../images/hero.JPG);
   }
 }
 
