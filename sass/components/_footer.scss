@@ -8,47 +8,89 @@
   text-align: center;
   @media screen and (min-width: 768px) {
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 768px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+  }
+}
+.footer-flexbox {
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    width: 285px;
+  }
+}
+.footer-box {
+  margin-right: auto;
+  margin-left: auto;
+  @media screen and (max-width: 479px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 570px;
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    text-align: left;
+    position: relative;
   }
 }
 
-.footer-logo {
-  display: inline-block;
-  margin-bottom: 20px;
-}
-.footer-social {
-  margin-bottom: 20px;
-  padding: 0;
-}
 .caption-b {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
-  color: $complementary-color;
-}
-.footer-box {
-  width: 100%;
   text-align: center;
+  color: $complementary-color;
+  margin-right: 0;
+}
+.input-email {
+  height: 50px;
+  margin-top: 20px;
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: #2f303a;
+  color: #c4c4c4;
+  @media screen and (max-width: 479px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 480px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
   @media screen and (min-width: 1200px) {
-    position: relative;
-    display: flex;
-    width: 570px;
+    width: 358px;
   }
 }
-
 .button-icon {
   text-align: left;
   padding-left: 35px;
-  position: relative;
-  top: 33px;
-
+  margin-top: 20px;
   background-image: url(/images/svg/airplane.svg);
   background-repeat: no-repeat;
   background-position: 90% 50%;
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    left: 65%;
+    top: 17px;
+  }
 }
 .google-link {
   display: inline-block;
@@ -60,14 +102,7 @@
   text-decoration: none;
   color: $complementary-color;
 }
-.footer-flexbox {
-  margin-bottom: 60px;
 
-  @media screen and (min-width: 1200px) {
-    display: block;
-    width: 285px;
-  }
-}
 .footer-contacts {
   display: inline-block;
   margin-top: 9px;
@@ -94,6 +129,14 @@
 .footer-studio {
   color: $complementary-color;
 }
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.footer-social {
+  margin-bottom: 20px;
+  padding: 0;
+}
 
 .footer-social-link {
   display: inline-flex;
@@ -117,19 +160,6 @@
     background-color: $accent-color;
   }
 }
-.input-email {
-  width: 100%;
-  height: 50px;
-  padding-left: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  background-color: #2f303a;
-  color: #c4c4c4;
-  margin-top: 15px;
-
-  @media screen and (min-width: 480px) {
-    width: 450px;
-  }
+.burger-menu {
+  color: #2f303a;
 }
