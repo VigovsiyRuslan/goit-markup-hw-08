@@ -12,7 +12,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     /> -->
-    <link rel="stylesheet" href="./css/style.css" />
+    
     <link rel="stylesheet" href="./css/portfolio.min.css" />
   </head>
   <body>
@@ -84,11 +84,14 @@
                       конкурентов.
                     </p>
                   </div>
-                  <img
-                    src="./images/portfolio/portfolio1.jpg"
-                    width="370"
-                    alt=""
-                  />
+                  <picture>
+                    <source srcset="./images/portfolio/portfolio1.jpg 1x, ./images/portfolio-desktop/project1x2.jpg2x" type="image"
+                      media="(min-width:768px)" />
+                    <source srcset="./images/portfolio-tablet/project1.jpg 1x, ./images/portfolio-tablet/project1x2.jpg2x" type="image"
+                      media="(min-width:768px)" />
+                    <source srcset="./images/portfolio-mobile/project1.jpg 1x, ./images/portfolio-mobile/project1x2.jpg2x" type="image" media="(max-width:767px)"/> 
+                    <img src="./images/portfolio/portfolio1.jpg" width="370" alt="" />
+                  </picture>
                 </div>
                 <div class="contetnt-portfolio">
                   <h3 class="title-portfolio">Технокряк</h3>
@@ -109,7 +112,7 @@
                   </div>
                   <img
                     src="./images/portfolio/portfolio2.jpg"
-                    width="370"
+                    width=""
                     alt=""
                   />
                 </div>
@@ -134,7 +137,7 @@
                   </div>
                   <img
                     src="./images/portfolio/portfolio3.jpg"
-                    width="370"
+                    width=""
                     alt=""
                   />
                 </div>
@@ -157,7 +160,7 @@
                   </div>
                   <img
                     src="./images/portfolio/portfolio4.jpg"
-                    width="370"
+                    width=""
                     alt=""
                   />
                 </div>
@@ -180,7 +183,7 @@
                   </div>
                   <img
                     src="./images/portfolio/portfolio5.jpg"
-                    width="370"
+                    width=""
                     alt=""
                   />
                 </div>
@@ -203,7 +206,7 @@
                   </div>
                   <img
                     src="./images/portfolio/portfolio6.jpg"
-                    width="370"
+                    width=""
                     alt=""
                   />
                 </div>
@@ -226,7 +229,7 @@
                   </div>
                   <img
                     src="./images/portfolio/portfolio7.jpg"
-                    width="370"
+                    width=""
                     alt=""
                   />
                 </div>
@@ -249,7 +252,7 @@
                   </div>
                   <img
                     src="./images/portfolio/portfolio8.jpg"
-                    width="370"
+                    width=""
                     alt=""
                   />
                 </div>
@@ -272,7 +275,7 @@
                   </div>
                   <img
                     src="./images/portfolio/portfolio9.jpg"
-                    width="370"
+                    width=""
                     alt=""
                   />
                 </div>

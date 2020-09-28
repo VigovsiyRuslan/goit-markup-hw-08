@@ -443,6 +443,12 @@ li {
   background-color: #2196f3;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .page-header {
   border-bottom: 1px solid #ececec;
   padding-top: 24px;
@@ -577,6 +583,28 @@ li {
 .nav-contact .link:focus {
   color: #2196f3;
   fill: #2196f3;
+}
+
+.menu-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-button .icon-menu {
+  display: none;
+}
+
+.menu-button .is-open .icon-croos {
+  display: block;
+}
+
+.menu-button .is-open .icon-menu {
+  display: none;
 }
 
 .hero {
